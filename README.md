@@ -1,14 +1,15 @@
+
 # Elevated CMD
-[CMLuaUtil]::ShellExec("cmd.exe")
+```[CMLuaUtil]::ShellExec("cmd.exe")```
 
 # Elevated PowerShell
-[CMLuaUtil]::ShellExec("powershell.exe", "-NoExit -Command whoami /priv")
+```[CMLuaUtil]::ShellExec("powershell.exe", "-NoExit -Command whoami /priv")```
 
 # Programm mit Argumenten
-[CMLuaUtil]::ShellExec("notepad.exe", "C:\Windows\System32\drivers\etc\hosts")
+```[CMLuaUtil]::ShellExec("notepad.exe", "C:\Windows\System32\drivers\etc\hosts")```
 
 # Registry Wert setzen (HKLM)
-[CMLuaUtil]::SetRegValue("SOFTWARE\Test", "MyValue", "MyData")
+```[CMLuaUtil]::SetRegValue("SOFTWARE\Test", "MyValue", "MyData")```
 
 # Registry Wert loeschen
-[CMLuaUtil]::DeleteRegValue("SOFTWARE\Test", "MyValue")
+```[CMLuaUtil]::DeleteRegValue("SOFTWARE\Test", "MyValue")```
